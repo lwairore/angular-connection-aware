@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ConnectionComponent } from './connection/connection.component';
 import { SlowDirective } from './slow.directive';
+import { FastDirective } from './fast.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     ConnectionComponent,
-    SlowDirective
+    SlowDirective,
+    FastDirective
   ],
   imports: [
     BrowserModule,
