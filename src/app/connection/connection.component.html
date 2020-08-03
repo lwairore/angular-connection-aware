@@ -1,1 +1,6 @@
-<p>connection works!</p>
+<ng-template 
+    [ngTemplateOutlet]="fast.tpl"
+    *ngIf="isFast"></ng-template>
+<ng-template
+    [ngTemplateOutlet]="slow.tpl"
+    *ngIf="!isFast"></ng-template>
