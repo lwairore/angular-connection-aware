@@ -1,10 +1,12 @@
-import { Directive } from '@angular/core';
+import { Directive, TemplateRef } from '@angular/core';
 
 @Directive({
   selector: '[appFast]'
 })
 export class FastDirective {
 
-  constructor() { }
+  constructor(
+    public tpl: TemplateRef<any>
+  ) { }
 
 }
